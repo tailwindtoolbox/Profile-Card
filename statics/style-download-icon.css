@@ -1,0 +1,107 @@
+/* 
+style-download-icon.css
+*/
+
+.button {
+	display: block;
+	background-color: #065d44; /*INITIAL COLOR OF THE BUTTON*/
+	width: 140px; /*WIDTH OF THE BUTTON*/
+	height: 40px; /*BUTTON*/
+	line-height: 40px; /*BUTTON*/
+	margin: auto;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+	overflow: hidden;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+	transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button span,
+.button .icon {
+	display: block;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	top: 0;
+}
+
+.button span {
+	width: 72%;
+	line-height: inherit;
+	font-size: 13px; /*BUTTON*/
+	text-transform: uppercase;
+	left: 0;
+	transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+.button span:after {
+	content: "";
+	background-color: #fff; /*COLOR OF THE BAR IN BETWEEN*/
+	width: 2px;
+	height: 70%;
+	position: absolute;
+	top: 15%;
+	right: -1px;
+}
+
+.button .icon {
+	width: 28%;
+	right: 0;
+	transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+.button .icon .fa {
+	font-size: 15px;  /*BUTTON*/
+	vertical-align: middle;
+	horizontal-align: middle;
+	transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+}
+
+.button .icon .fa-download {
+	height: 15px; /*BUTTON*/
+}
+
+.button .icon .fa-check {
+	display: none;
+}
+
+.button.success span, .button:hover span {
+	left: -72%;
+	opacity: 0;
+}
+
+.button.success .icon, .button:hover .icon {
+	width: 100%;
+}
+
+.button.success .icon .fa, .button:hover .icon .fa {
+	font-size: 15px;  /*BUTTON*/
+}
+
+.button.success {
+	background-color: #c0392b; /*COLOR BEHIND THE CHECKMARK #27ae60*/
+}
+
+.button.success .icon .fa-download {
+	display: none;
+}
+
+.button.success .icon .fa-check {
+	display: inline-block;
+}
+
+.button:hover {
+	opacity: 0.9;
+}
+
+.button:hover .icon .fa-download {
+  
+}
+
+.button:active {
+	opacity: 1;
+}
