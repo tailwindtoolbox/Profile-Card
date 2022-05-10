@@ -1,3 +1,4 @@
 {
-    "https_only": true
-  }
+  "root": "https://github.com/peachannoy/Webpage-.git",
+  "clean_urls": false
+}
